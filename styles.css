@@ -1,0 +1,145 @@
+
+body {
+   padding-top: 130px;
+   font-family: verdana,sans-serif;
+ }
+ 
+ header {
+  left: 0;
+  right: 0; 
+  height: 120px;
+  width: 100%;
+  padding: 10px;
+  background-color: darksalmon;
+  /* background-color: rgba(34, 49, 52, 0.9); */
+  position :fixed; 
+  top: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0px;
+}
+
+header p {
+  width: calc(100% - 100px - 30px);
+}
+
+.header-right {
+  width: 100px;
+  float: right;
+  margin-right: 35px;
+}
+
+a .hover{
+  display: none;
+  }
+/* ホバー時は通常時の文字を非表示にする */
+a:hover .nomal{
+  display: none;
+  }
+  
+  /* ホバー時に、ホバー時の文字を表示する */
+  a:hover .hover{
+  display: inline;
+  font-size: 12px
+  }  
+
+.header-right a {
+  color: #ffffff;
+  font-size: 13px;
+  display: block;
+} 
+
+section {
+  display: flex;
+  justify-content: center;
+} 
+
+ section:nth-child(even){ 
+  flex-direction: row-reverse;
+}
+
+.desk{
+  width: calc(100% - 250px -32px);
+  margin:	40px 15px 40px 15px;
+}
+
+.pic {
+  width:			640px;
+  height:			426px;
+  overflow:		hidden;
+  margin:			40px 8px 40px 16px;
+  position:		relative;	/* 相対位置指定 */
+}
+
+.pic .caption {
+  font-size:		35px;
+  text-align: 		center;
+  padding-top:		130px;
+  color:			#fff;
+  
+}
+
+.desk{
+  width:100% ;
+  /* margin:	40px 15px 40px 15px; */
+}
+
+.pic {
+  width:			100%;
+  height:			100%;
+  overflow:		hidden;
+  margin:			40px 8px 40px 16px;
+  position:		relative;	/*相対位置指定*/
+}
+
+.pic .caption {
+  font-size:		35px;
+  text-align: 		center;
+  padding-top:		130px;
+  color:			#fff;
+  
+}
+
+.pic .mask {
+  width:			100%;
+  height:			100%;
+  position:		absolute;	/* 絶対位置指定 */
+  top:			0;
+  left:			0;
+  opacity:		0;	/* マスクを表示しない */
+  /* background-color:	rgba(0,0,0,0.4);	 */
+  -webkit-transition:	all 1.2s ease;
+  transition:		all 1.2s ease;
+}
+
+.pic:hover .mask {
+  opacity:		1;	/* マスクを表示する */
+  transition:all 1.8s ease;
+}
+
+
+.features .container {
+  margin: 0 32px;
+}
+
+.features p {
+  line-height: 1.8;
+}
+
+.features section {
+  padding-bottom: 64px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
